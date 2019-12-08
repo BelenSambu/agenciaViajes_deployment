@@ -1,0 +1,28 @@
+//- Para exportar bootstrap de la carpeta layout
+extends ../layout/index
+//-block será donde se guarde lo que se quiera mostrar en el index de Layout
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img.img-fluid(src="img/nosotros.jpg", alt="img de nosotros")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis volutpat, pellentesque leo sit amet, mattis augue. Pellentesque ex libero, sagittis id aliquet sed, tincidunt sit amet leo. Mauris vitae mauris magna. Donec posuere tristique lectus vitae maximus. Curabitur augue neque, molestie et diam accumsan, dictum viverra felis. Praesent at tincidunt tortor, a ornare velit. Proin pharetra porttitor dui, non faucibus lacus varius vitae. Proin orci felis, auctor sed augue eget, sagittis laoreet magna.
+                p Nullam auctor nibh non dui eleifend, vel maximus risus sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                p Praesent interdum, nunc id convallis volutpat, ligula nisi malesuada lacus, at bibendum lacus erat sed ipsum.
+    .listado-iconos 
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="" class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Praesent interdum, nunc id convallis volutpat, ligula nisi malesuada lacus, at bibendum lacus erat sed ipsum.    
+                .col-md-4    
+                    img(src="img/icono_destinos.svg", alt="" class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Praesent interdum, nunc id convallis volutpat, ligula nisi malesuada lacus, at bibendum lacus erat sed ipsum.    
+                .col-md-4    
+                    img(src="img/icono_precios.svg", alt="" class="img-fluid mb-4")
+                    h2.mb-4 Precios
+                    p Praesent interdum, nunc id convallis volutpat, ligula nisi malesuada lacus, at bibendum lacus erat sed ipsum.                
