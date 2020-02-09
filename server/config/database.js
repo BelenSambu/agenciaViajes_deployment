@@ -7,7 +7,7 @@ require('dotenv').config( { path: 'variables.env'})
 //Port es la de mysql
 console.log(process.env.BD_PORT)
 
-module.exports = new Sequelize(process.env.BD_NOMBRE, process.env.BD_USER,'', {
+module.exports = new Sequelize(process.env.BD_NOMBRE, process.env.BD_USER,process.env.BD_PASSWORD, {
     host: process.env.BD_HOST,
     port: process.env.BD_PORT,
     dialect: 'mysql',
